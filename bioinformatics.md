@@ -48,8 +48,9 @@
 
 ## Comprehensive packages
 
-- [Biopython](http://biopython.org/)
-- [Biogo](https://github.com/biogo)
+- [python] [Biopython](http://biopython.org/)
+- [golang] [Biogo](https://github.com/biogo)
+- [golang] [bio](https://github.com/shenwei356/bio) - A simple but high-performance bioinformatics package in Go
 
 ## General file formats
 
@@ -68,16 +69,24 @@
 - [grabix](https://github.com/arq5x/grabix) - a wee tool for random access into BGZF files
 - [golang]  [bix](https://github.com/brentp/bix) - tabix file access with golang using biogo machinery
 - [mergesam](https://github.com/DarwinAwardWinner/mergesam) - Automate common sam & bam conversions
+- [SAMstat](http://samstat.sourceforge.net/) - Displaying sequence statistics for next generation sequencing
 
 ## Fasta/q
 
 - [seqtk](https://github.com/lh3/seqtk) - Toolkit for processing sequences in FASTA/Q formats
+- [fakit](http://github.com/shenwei356/fakit) - A cross-platform and efficient toolkit for FASTA/Q file manipulation http://shenwei356.github.io/fakit
 - [python] [pyfaidx](https://github.com/mdshw5/pyfaidx) - pyfaidx: efficient pythonic random access to fasta subsequences
+- [golang] [bio](https://github.com/shenwei356/bio) - A simple but high-performance bioinformatics package in Go
+
+FASTA index
+
 - [golang] [faidx](https://github.com/brentp/faidx)
+- [golang] [bio/seqio/fai](https://github.com/shenwei356/bio/tree/master/seqio/fai)
 
 ## GFF/BED/VCF
 
 - [bedtools2](https://github.com/arq5x/bedtools2) - A powerful toolset for genome arithmetic.
+- [BEDOPS](https://bedops.readthedocs.org/en/latest/index.html) - the fast, highly scalable and easily-parallelizable genome analysis toolkit
 - [python] [gffutils](https://github.com/daler/gffutils) - GFF and GTF file manipulation and interconversion
 - [python] [pybedtools](https://github.com/daler/pybedtools) - Python wrapper for Aaron Quinlan's BEDTools
 - [golang] [irelate](https://github.com/brentp/irelate) - Streaming relation (overlap, distance, KNN) of (any number of) sorted genomic interval sets. #golang
@@ -90,6 +99,9 @@
 - [blast_table2xml](https://github.com/jameslz/blast_table2xml) - Convert blast m6 format to xml for blast2go
 - [*seqmagick*](http://seqmagick.readthedocs.org/en/latest/) - file format conversion in Biopython in a convenient way
 
+## Database API
+
+- [pyensembl](https://github.com/hammerlab/pyensembl) - Python interface to ensembl reference genome metadata (exons, transcripts, etc...)
 
 ## data structure
 
@@ -141,7 +153,9 @@
 
 ## Kmer
 
+- [khmer](https://github.com/dib-lab/khmer) - In-memory nucleotide sequence k-mer counting, filtering, graph traversal and more http://khmer.readthedocs.org/
 - [Jellyfish](https://github.com/gmarcais/Jellyfish)
+ 
 
 
 ## Phylogenetic tree
@@ -150,11 +164,12 @@
 - [python] [ETE tools](http://etetoolkit.org/)
 - [evolview](http://evolgenius.info/evolview/)
 
-## NCBI Taxonomy
+## Taxonomy
 
 - [NCBI_taxonomy_tree](https://github.com/frallain/NCBI_taxonomy_tree) - NCBI taxonomy tree in-memory mapping
 - [taxiphy](https://github.com/bendmorris/taxiphy) - Common repository for scripts to generate trees from taxonomies. Currently includes ITIS, NCBI, and GBIF.
 - [gtaxon](https://github.com/shenwei356/gtaxon) - A fast cross-platform NCBI taxonomy data querying (gi2taxid, taxid2taxon, name2taxid, LCA) tool, with cmd client and REST API server for both local and remote server. 
+- [R] [taxize](https://github.com/ropensci/taxize) - A taxonomic toolbelt for R http://ropensci.org/tutorials/taxize.html
 
 ## Assembly
 
@@ -187,6 +202,23 @@
 - [PhyloSift](https://github.com/gjospin/PhyloSift) - Phylogenetic and taxonomic analysis for genomes and metagenomes
 - [MetaQuery: Annotation and quantitative analysis of genes in the human gut microbiome](http://metaquery.docpollard.org/)
 
+
+## 16S
+
+-  [高通量数据处理的一些经验和建议](http://blog.sciencenet.cn/blog-871198-677805.html)
+-  [How to choose ordination method, such as PCA, CA, PCoA, and NMDS?](https://www.researchgate.net/post/How_to_choose_ordination_method_such_as_PCA_CA_PCoA_and_NMDS)
+
+### Classifier | removing human reads
+
+- [taxonomer.iobio](http://taxonomer.iobio.io/info.html) - Taxonomer is a kmer-based ultrafast metagenomics tool for assigning taxonomy to sequencing reads from both clinical and environmental samples.
+- [BMTagger](ftp://ftp.ncbi.nlm.nih.gov/pub/agarwala/bmtagger/) - Best Match Tagger for removing human reads from metagenomics datasets [paper](https://www.researchgate.net/publication/267988741_BMTagger_Best_Match_Tagger_for_removing_human_reads_from_metagenomics_datasets),[sop](http://hmpdacc.org/doc/HumanSequenceRemoval_SOP.pdf)
+- [Centrifuge](http://ccb.jhu.edu/software/centrifuge) - Classifier for metagenomic sequences
+
+
+## Virome
+
+- [viral-ngs](https://github.com/broadinstitute/viral-ngs) - Viral genomics analysis pipelines
+
 ## Chip-seq
 
 - [ChIP-seq-analysis](https://github.com/crazyhottommy/ChIP-seq-analysis)
@@ -200,6 +232,7 @@
 ## PCR
 
 - [find_differential_primers](https://github.com/widdowquinn/find_differential_primers) - Scripts to aid the design of differential primers for diagnostic PCR.
+- [Primer3-py](http://libnano.github.io/primer3-py/) - Primer3-py is a Python-abstracted API for the popular Primer3 library. The intention is to provide a simple and reliable interface for automated oligo analysis and design.
 
 ## HPC
 

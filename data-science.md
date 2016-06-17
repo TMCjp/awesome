@@ -10,6 +10,20 @@
 -  [DataPyR](https://datapyr.zeef.com/kranthi.kumar)
 -  [Choosing R or Python for data analysis? An infographic](http://blog.datacamp.com/r-or-python-for-data-analysis/)
 
+## Workflow/Pipelines tools
+
+DSL
+
+-  [***snakemake***](https://bitbucket.org/snakemake/snakemake/wiki/Home) - Snakemake is a workflow management system that aims to reduce the complexity of creating workflows by providing a fast and comfortable execution environment, together with a clean and modern specification language in python style.  [Build bioinformatics pipelines with Snakemake](https://slowkow.com/notes/snakemake-tutorial/)
+-  [nextflow](https://github.com/nextflow-io/nextflow) - A DSL for data-driven computational pipelines http://nextflow.io
+-  [sake](https://github.com/tonyfischetti/sake) - A self-documenting build automation tool
+
+Language-dependent
+
+-  [toil](https://github.com/BD2KGenomics/toil) - A scalable, efficient, cross-platform and easy-to-use workflow engine in pure Python
+-  [Ruffus](http://www.ruffus.org.uk/) - Ruffus is a Computation Pipeline library for python. It is open-sourced, powerful and user-friendly, and widely used in science and bioinformatics.
+
+
 ## Dataset
 
 -  [awesome-public-datasets](https://github.com/caesar0301/awesome-public-datasets) - An awesome list of (large-scale) public datasets on the Internet. (On-going collection)
@@ -17,13 +31,16 @@
 ## Tools
 
 -  [csvkit](https://github.com/onyxfish/csvkit) - A suite of utilities for converting to and working with CSV, the king of tabular file formats. [http://csvkit.rtfd.org/](http://csvkit.rtfd.org/)
--  [datakit](https://github.com/shenwei356/datakit) - CSV/TSV file manipulation and more
+-  [csvtk](https://github.com/shenwei356/csvtk) - Another cross-platform, efficient, practical and pretty CSV/TSV toolkit in Golang http://shenwei356.github.io/csvtk 
 
 ## Data structure
 
 -  [skizze](https://github.com/seiflotfy/skizze) - A probabilistic data structure service and storage
 -  [dablooms](https://github.com/bitly/dablooms) - A Scalable, Counting, Bloom Filter. Java, Python, Go edition.
 -  [inbloom](https://github.com/EverythingMe/inbloom) - Cross language bloom filter implementation
+-  HyperLogLog & HyperLogLog++, 
+   [大数据计算：如何仅用1.5KB内存为十亿对象计数 - Hyper LogLog 算法](http://blog.csdn.net/heiyeshuwu/article/details/41248379),
+   [如何快速估计巨大 dataset 中unique 元素的数目](http://baozitraining.org/blog/how-to-quickly-count-unique-items-in-large-dataset/)
 
 ## Statistics
 
@@ -45,6 +62,15 @@
 -  [Elements of Scale: Composing and Scaling Data Platforms](http://www.benstopford.com/2015/04/28/elements-of-scale-composing-and-scaling-data-platforms/)
 -  http://www.analyticsvidhya.com/
 -  [数据科学家修炼宝典](http://mooc.guokr.com/topic/DataScientist/)
+
+## Books
+
+- [***Mining of Massive Datasets***](http://www.mmds.org/) - The book is based on Stanford Computer Science course CS246: Mining Massive Datasets
+
+## Course
+
+- [Stanford Computer Science course CS246: Mining Massive Datasets](http://www.ee.columbia.edu/~cylin/course/bigdata/index.html)
+- [algorithms for Big Data](http://grigory.us/big-data-class.html) - This class will give you a biased sample of techniques for scalable data anslysis
 
 ## Misc
 

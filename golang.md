@@ -7,6 +7,7 @@
 -  [(Draft) Traps, Gotchas, and Common Mistakes in Go (golang)](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/)
 -  Rob Pike的Go语言PPT教程翻译[1](http://tonybai.com/2012/08/23/the-go-programming-language-tutorial-part1/),[2](http://tonybai.com/2012/08/27/the-go-programming-language-tutorial-part2/),[3](http://tonybai.com/2012/08/28/the-go-programming-language-tutorial-part3/)
 -  [Translating Effective Python into Go: Know When to Use Channels for Generator-Like Functions](http://www.informit.com/articles/article.aspx?p=2359758)
+- [go-best-practices-2016](https://peter.bourgon.org/go-best-practices-2016/?utm_source=golangweekly&utm_medium=email)
 
 ## Install packages
 
@@ -75,12 +76,26 @@ Or use [gofresh](https://github.com/divan/gofresh) (Keep your Go package depend
 - [go-broadcast](https://github.com/dustin/go-broadcast) - A trivial channel pubsub I use in lots of projects. http://godoc.org/github.com/dustin/go-broadcast
 - [tunny](https://github.com/Jeffail/tunny) - A goroutine pool for golang
 - [Mastering concurrency in Go](https://www.outlearn.com/learn/matryer/mastering-concurrency-in-go)
+- [bufferManager.go](https://github.com/songgao/bufferManager.go) - bufferManager demonstrates a technique to decrease pressure on GC in Go.
+- [Interfaces in Go Object Oriented Go](https://medium.com/@gianbiondi/interfaces-in-go-59c3dc9c2d98#.8sk9pzn9g)
+
+## Performance
+
+- [Go Performance Tales](http://jmoiron.net/blog/go-performance-tales/)
 - [**So You Wanna Go Fast?**](http://bravenewgeek.com/so-you-wanna-go-fast/)
+- [gcvis](https://github.com/davecheney/gcvis) - Visualise Go program GC trace data in real time http://dave.cheney.net/2014/07/11/visualising-the-go-garbage-collector
+- [go-torch](https://github.com/uber/go-torch) - Stochastic flame graph profiler for Go programs
+
+- [Visualizing profiling in Go: A different way](http://www.florinpatan.ro/2016/05/visualizing-profiling-in-go-different.html)
+
+## Test
+
+- [gotests](https://github.com/cweill/gotests) - Generate better Go tests from your source code.
 
 ## Data Structure
 
 - **[go-datastructures](https://github.com/Workiva/go-datastructures)** - Go-datastructures is a collection of useful, performant, and threadsafe Go datastructures.
-- [golang-set](https://github.com/deckarep/golang-set) - A simple set type for the Go language.
+- [**golang-set**](https://github.com/deckarep/golang-set) - A simple set type for the Go language.
 - [set](https://github.com/fatih/set) - Set is a basic and simple, hash-based, Set data structure implementation in Go (Golang)
 - [set](https://github.com/xtgo/set) - General, type-safe, non-allocating set-operations for any sort.Interface
 - [pmap (ParallelMap)](https://github.com/shenwei356/pmap) - A lock-free parallel map in go
@@ -88,9 +103,16 @@ Or use [gofresh](https://github.com/divan/gofresh) (Keep your Go package depend
 - [btree](https://github.com/google/btree) - by google
 - [bloom](https://github.com/willf/bloom) - Go package implementing Bloom filters
 - [bitset](https://github.com/willf/bitset) - Go package implementing bitsets
-- **[BoomFilters](://github.com/tylertreat/BoomFilters)** - Probabilistic data structures for processing continuous, unbounded streams. This includes Stable Bloom Filters, Scalable Bloom Filters, Counting Bloom Filters, Inverse Bloom Filters, Cuckoo Filters, several variants of traditional Bloom filters, HyperLogLog, Count-Min Sketch, and MinHash
+- [countminsketch](https://github.com/shenwei356/countminsketch) - An implementation of Count-Min Sketch in Golang
+- **[BoomFilters](https://github.com/tylertreat/BoomFilters)** - Probabilistic data structures for processing continuous, unbounded streams. This includes Stable Bloom Filters, Scalable Bloom Filters, Counting Bloom Filters, Inverse Bloom Filters, Cuckoo Filters, several variants of traditional Bloom filters, HyperLogLog, Count-Min Sketch, and MinHash
+- [cuckoofilter](https://github.com/seiflotfy/cuckoofilter) - Cuckoo Filter: Practically Better Than Bloom
 - [goraph](https://github.com/gyuho/goraph) - Package goraph implements graph, tree data structures and algorithms.
 - [go-radix](https://github.com/armon/go-radix) - Golang implementation of Radix trees, [go-immutable-radix](https://github.com/hashicorp/go-immutable-radix)
+- [sortutil](https://github.com/cznic/sortutil) - Utilities supplemental to the Go standard "sort" package
+- [go-minhash](https://github.com/dgryski/go-minhash) - BottomK minwise hashing for streaming set similarity
+- [hyperloglog](https://github.com/clarkduvall/hyperloglog) - HyperLogLog and HyperLogLog++ implementation in Go/Golang. http://godoc.org/github.com/clarkduvall/hyperloglog
+- [mafsa](https://github.com/smartystreets/mafsa) - Package mafsa implements Minimal Acyclic Finite State Automata in Go, essentially a high-speed, memory-efficient, Unicode-friendly set of strings. https://godoc.org/github.com/smartystreets/mafsa
+
 
 ## IO
 
@@ -104,6 +126,7 @@ Or use [gofresh](https://github.com/divan/gofresh) (Keep your Go package depend
 ## File format
 
 - [xlsx](https://github.com/tealeg/xlsx) - Google Go (golang) library for reading and writing XLSX files.
+- [multicorecsv](https://github.com/mzimmerman/multicorecsv) - A multicore csv reader library in Go. 3X
 
 ## Algorithm
 
@@ -111,11 +134,16 @@ Or use [gofresh](https://github.com/divan/gofresh) (Keep your Go package depend
 - [golearn](https://github.com/sjwhitworth/golearn) - Machine Learning for Go
 - [gonn](https://github.com/fxsjy/gonn) -GoNN is an implementation of Neural Network in Go Language, which includes BPNN, RBF, PCN
 - [CloudForest](https://github.com/ryanbressler/CloudForest) - Ensembles of decision trees in go/golang.
+- [bayesian](https://github.com/jbrukh/bayesian) - Naive Bayesian Classification for Golang.
+- [go-galib](https://github.com/thoj/go-galib) - Genetic Algorithms library written in Go / golang
+
+
 
 ## Math
 
 - [geom](https://github.com/skelterjohn/geom) - 2d geometry for golang
 - [gonum](https://github.com/gonum)
+- [pip-go](https://github.com/JamesMilnerUK/pip-go) - Point in polygon implemented in Go
 
 ## Statistics
 
@@ -137,17 +165,23 @@ log
 Others
 
 - [gouuid](https://github.com/nu7hatch/gouuid) - Pure Go UUID implementation
+- [basex](https://github.com/dineshappavoo/basex) - Create Youtube-Like IDs With Golang
 - [quarnster/util](https://github.com/quarnster/util) - Various Go utility code
 - [daemon](https://github.com/takama/daemon) - A daemon package for use with Go (golang) services with no dependencies
 - [shutdown](https://github.com/klauspost/shutdown) - Shutdown management library for Go
 - [Gox](https://github.com/mitchellh/gox) - Simple Go Cross Compilation。更新go版本后，记得gox -build-toolchain
+- [goxc](https://github.com/laher/goxc) - a build tool for Go, with a focus on cross-compiling, packaging and deployment
 - [clipboard](https://github.com/atotto/clipboard) - clipboard for golang
+- [go.pipeline](https://github.com/songgao/go.pipeline) - go.pipeline is a utility library that imitates unix pipeline. It simplifies chaining unix commands (and other stuff) in Go.
 
 Date
 
 - [monday](https://github.com/mikespook/) - Monday is a minimalistic translator for month and day of week names in time.Date objects
 - [Now](https://github.com/jinzhu/now) - Now is a time toolkit for golang
 
+Debug
+
+- [go-spew](https://github.com/davecgh/go-spew) - Go-spew implements a deep pretty printer for Go data structures to aid in debugging.
 
 ## CLI
 
@@ -165,6 +199,7 @@ Date
 - [viper](https://github.com/spf13/viper) -Go configuration with fangs
 - [goconfig](https://github.com/Unknwon/goconfig) - goconfig is a easy-use comments-support configuration file(.ini) parser for the Go Programming Language
 - [go-homedir](https://github.com/mitchellh/go-homedir) - Go library for detecting and expanding the user's home directory without cgo.
+- [go-prettytable](https://github.com/tatsushid/go-prettytable) - A library for Golang to build a simple text table with a multibyte, doublewidth character support
 
 ## JSON
 
@@ -173,12 +208,17 @@ Date
 - [gojson](https://github.com/ChimeraCoder/gojson) - A simple command-line tool for manipulating JSON for use in developing Go cod
 - [jsonpp](https://github.com/jmhodges/jsonpp) - A command line JSON pretty printer.
 
+## Serialization
+
+- [Practical Golang: Using Protobuffs](https://jacobmartins.com/2016/05/24/practical-golang-using-protobuffs/)
+
 ## Text
 
 - [go-humanize](https://github.com/dustin/go-humanize) - Go Humans! (formatters for units to human friendly sizes) https://godoc.org/github.com/dustin/go-humanize
 - [A modern text indexing library for go](https://github.com/blevesearch/bleve)
 - [govalidator](https://github.com/asaskevich/govalidator) - Package of string validators and sanitizers for Go lang
 - [iconv](https://github.com/qiniu/iconv) - Golang bindings to libiconv - Convert string to requested character encoding
+- [diff](https://github.com/mb0/diff) - Go difference algorithm
 
 ## Markdown
 
@@ -191,11 +231,11 @@ Date
 - [beego](https://github.com/astaxie/beego) - beego is an open-source, high-performance web framework for the Go programming language. [http://beego.me](http://beego.me/)
 - [echo](https://github.com/labstack/echo) - Echo is a fast :rocket: and unfancy micro web framework for Golang. http://echo.labstack.com
 - [ace](https://github.com/yosssi/ace) - HTML template engine for Go [http://ace.yoss.si/](http://ace.yoss.si/)
-- [osin]https://github.com/RangelReale/osin - Golang OAuth2 server library
+- [osin](https://github.com/RangelReale/osin) - Golang OAuth2 server library
 - [go-oauth](https://github.com/garyburd/go-oauth) - OAuth 1.0 client package for Go
 - [go-http-auth](https://github.com/abbot/go-http-auth) - Basic and Digest HTTP Authentication for golang http
 - [gomniauth](https://github.com/stretchr/gomniauth) - Authentication framework for Go applications.
-- [hawk](https://github.com/hueniverse/hawk))  - HTTP Holk Authentication Schemz
+- [hawk](https://github.com/hueniverse/hawk)  - HTTP Holk Authentication Schemz
 - [gopencils](https://github.com/bndr/gopencils) - Easily consume REST APIs with Go (golang)
 - [code.google.com/p/go.crypto/ssh](https://godoc.org/code.google.com/p/go.crypto/ssh) - Package ssh implements an SSH client and server. [example](http://kukuruku.co/hub/golang/ssh-commands-execution-on-hundreds-of-servers-via-go)
 - [go-pkg-rss](https://github.com/jteeuwen/go-pkg-rss) - reads RSS and Atom feeds and provides a caching mechanism that adheres to the feed specs.
@@ -228,6 +268,9 @@ rich data structure
 - [ledisdb](https://github.com/siddontang/ledisdb) - a high performance NoSQL powered by Go
 - [tidb](https://github.com/pingcap/tidb) - TiDB is a distributed SQL database compatible with MySQL protocol.
 
+graph
+
+- [dgraph](https://github.com/dgraph-io/dgraph) - Scalable, Distributed, Low Latency Graph Database
 ## ORM
 
 - [gorm](https://github.com/jinzhu/gorm) - The fantastic ORM library for Golang, aims to be developer friendly
@@ -263,6 +306,12 @@ rich data structure
 - [circuit](https://github.com/gocircuit/circuit)
 - [go-workers](https://github.com/jrallison/go-workers) - Sidekiq compatible background workers in golang
 - [glow](https://github.com/chrislusf/glow) - Glow is an easy-to-use distributed computation system written in Go, similar to Hadoop Map Reduce, Spark, Flink, Samza, etc. Currently just started and not feature rich yet, but should be reliable to run most common cases.
+
+### distributed systems
+
+- [Go kit](https://github.com/go-kit/kit) is a distributed programming toolkit for building microservices in large organizations.
+- [gam](https://github.com/rogeralsing/gam) - Go Actor Model framework - Ultra fast distributed actors for Golang
+- [rpcx](https://github.com/smallnest/rpcx) - rpcx is a distributed RPC service framework based net/rpc like alibaba Dubbo and weibo Motan. Implemented by Go
 
 ## Flow / piple
 

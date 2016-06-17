@@ -85,6 +85,15 @@
 -  [file-server](https://github.com/codeskyblue/file-server) - File Static Server written by golang.
 -  [hugo](https://github.com/spf13/hugo) - A Fast and Flexible Static Site Generator built with love by spf13 in GoLang [http://gohugo.io](http://gohugo.io/)
 
+## AngularJS
+
+- [11个很棒的 AngularJS 工具](http://www.imooc.com/article/1505)
+
+## Vuejs
+
+- [Vuejs](http://vuejs.org/)
+
+
 ## Docker
 
 -  [valuable-docker-links](http://www.nkode.io/2014/08/24/valuable-docker-links.html)
@@ -140,6 +149,7 @@
 -  [A Soft Murmur](http://asoftmurmur.com/)
 -  [https://www.planet.com](https://www.planet.com)
 -  [What if we had a planet instead of a Moon?](http://io9.com/5929076/what-if-we-had-a-planet-instead-of-a-moon)
+-  [meme](https://github.com/leeper/meme) - Meme Generation in R
 
 
 ## Internet
